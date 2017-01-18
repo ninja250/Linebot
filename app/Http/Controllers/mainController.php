@@ -33,7 +33,7 @@ $post['content']['text'] = $content->text.' ですね';
 
 $post = json_encode($post);
 
-$ch = curl_init("https://trialbot-api.line.me/v1/events");
+$ch = curl_init("https://linebot-system.herokuapp.com/");
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
